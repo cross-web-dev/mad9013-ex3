@@ -60,7 +60,13 @@ p{
     margin: 0 auto;
 }
 
-
+@media screen and (min-width: 600px){
+    .col-pic{
+        float: left;
+        width: 50%;
+        border: 1px solid red;
+    }
+}
 
 /* -- Footer -- */
 .footer{
