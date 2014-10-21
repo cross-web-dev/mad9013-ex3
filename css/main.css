@@ -28,6 +28,7 @@ p{
 
 
 .wrapper{
+/* If the screensize is larger than 1024px the layout should stay 1024px wide and stay centered.*/
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -60,11 +61,21 @@ p{
     margin: 0 auto;
 }
 
+/* two columns layout*/
 @media screen and (min-width: 600px){
+/* At 600px wide the layout should rearrange into two columns.*/
     .col-pic{
         float: left;
         width: 50%;
-        border: 1px solid red;
+    }
+}
+
+/* three columns layout*/
+@media screen and (min-width: 1024px){
+/* At 1024px wide the layout should rearrange into it's final layout of three columns.*/
+    .col-pic{
+        float: left;
+        width: 33.33%;
     }
 }
 
