@@ -53,20 +53,23 @@ p{
 /* -------------------------- */
 .col-container{
   margin: 3rem 0;
-  overflow: hidden;
 }
 
 .col-pic{
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* two columns layout*/
 @media screen and (min-width: 600px){
 /* At 600px wide the layout should rearrange into two columns.*/
+/* Adding 4% margin left for both columns, thus remaing width is 100%-12%=98% for both columns.
+   Thus width of one column is 98/2 = 44% */
     .col-pic{
         float: left;
-        width: 50%;
+        width: 44%;
+        margin-left: 4%;
     }
 }
 
