@@ -64,21 +64,26 @@ p{
 /* two columns layout*/
 @media screen and (min-width: 600px){
 /* At 600px wide the layout should rearrange into two columns.*/
-/* Adding 4% margin left for both columns, thus remaing width is 100%-12%=98% for both columns.
-   Thus width of one column is 98/2 = 44% */
+/* Adding 3% margin left/right for both columns, thus remaing width is 100%-12%=88%
+   for both columns. Thus width of one column is 88/2 = 44% */
     .col-pic{
         float: left;
         width: 44%;
-        margin-left: 4%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
 
 /* three columns layout*/
 @media screen and (min-width: 1024px){
 /* At 1024px wide the layout should rearrange into it's final layout of three columns.*/
+/* Adding 1% margin left/right for all columns and 1% margin right for last column, thus the remaingin width is
+    100% - 6% = 94%. Thus width of one column is 94%3 = 31.33%*/
     .col-pic{
         float: left;
-        width: 33.33%;
+        width: 31.33%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
 
